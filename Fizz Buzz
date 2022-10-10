@@ -1,0 +1,24 @@
+class Solution {
+public:
+    vector<string> fizzBuzz(int n) {
+        vector<string> fizzBuzzz(n);
+        int i=1;
+        for(int j=0;j<n;j++){
+            
+            if(i%3==0 && i%5==0){
+                fizzBuzzz[j]="FizzBuzz";
+                
+            }else{
+                if(i%3==0){
+                    fizzBuzzz[j]="Fizz";
+                }else if(i%5==0){
+                    fizzBuzzz[j]="Buzz";
+                }else{
+                    fizzBuzzz[j]=to_string(i);
+                }
+            }
+            i++;
+        }
+        return fizzBuzzz;
+    }
+};
